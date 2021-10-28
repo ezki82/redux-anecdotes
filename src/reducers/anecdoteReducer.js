@@ -22,7 +22,7 @@ const sortAnecdotes = (a) => {
   return a.sort((a, b) => b.votes - a.votes)
 }
 
-const reducer = (state = initialState, action) => {
+const reducer = (state = [], action) => {
   switch (action.type) {
     case 'NEW ANECDOTE':
       return sortAnecdotes([...state, action.data])
@@ -36,6 +36,8 @@ const reducer = (state = initialState, action) => {
       }
       return sortAnecdotes(state.map(anecdote =>
         anecdote.id !== id ? anecdote : voted))
+    case 'INIT NOTES':
+      return action.data
     default:
       return sortAnecdotes(state)
   }
@@ -56,6 +58,13 @@ export const createAnecdote = (content) => {
       id: getId(),
       votes: 0
     }
+  }
+}
+
+export const initializeAnecdotes = (anecdotes) => {
+  return {
+    type: 'INIT NOTES',
+    data: anecdotes
   }
 }
 

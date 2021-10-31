@@ -1,4 +1,5 @@
 const notificationAtStart = ''
+let timeoutId = null
 
 const reducer = (state = notificationAtStart, action) => {
     switch (action.type) {
@@ -19,9 +20,14 @@ export const setInfoNotification = (text, time) => {
             type: 'INFO',
             data: text
         })
-        setTimeout(() => {
+        // Clear previous timeout if present
+        if (timeoutId) {
+            clearTimeout(timeoutId)
+        }
+        timeoutId = setTimeout(() => {
+            timeoutId = null
             dispatch(setResetNotification())
-        }, time * 1000);
+        }, time * 1000)
     }
 }
 

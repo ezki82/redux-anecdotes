@@ -9,7 +9,7 @@ const NewAnecdote = () => {
     const dispatch = useDispatch()
 
     const vote = (anecdote) => {
-        dispatch(voteAnecdote(anecdote.id))
+        dispatch(voteAnecdote(anecdote))
         voteNotify(anecdote.content)
     }
 

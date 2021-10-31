@@ -3,7 +3,7 @@
     {
       "content": "If it hurts, do it more often",
       "id": "47145",
-      "votes": 0
+      "votes": 4
     },
     {
       "content": "Adding manpower to a late software project makes it later!",
@@ -18,7 +18,7 @@
     {
       "content": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
       "id": "36975",
-      "votes": 0
+      "votes": 5
     },
     {
       "content": "Premature optimization is the root of all evil.",
@@ -28,27 +28,7 @@
     {
       "content": "Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.",
       "id": "98312",
-      "votes": 0
-    },
-    {
-      "content": "What does not kill you makes you stronger",
-      "votes": 0,
-      "id": "nWfB_qM"
-    },
-    {
-      "content": "What does not kill you makes you stronger",
-      "votes": 0,
-      "id": "ARU34bn"
-    },
-    {
-      "content": "What does not kill you makes you stronger",
-      "votes": 0,
-      "id": "_WtZH6J"
-    },
-    {
-      "content": "Born to be wild",
-      "votes": 0,
-      "id": "FZljWGz"
+      "votes": 1
     }
   ]
 }
